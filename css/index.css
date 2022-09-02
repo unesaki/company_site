@@ -47,7 +47,9 @@ body {
 
 .header__logo {
   width: 70px;
-  margin-left: 25px;
+  margin-left: 30px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .header__nav {
@@ -89,6 +91,8 @@ body {
 
 .firstview__eyecatch {
   height: 600px;
+  position: relative;
+    margin-top: 80px;
 }
 
 .main-card-img {
@@ -191,6 +195,29 @@ body {
 .service__btn-link:hover {
   opacity: 0.7;
   transition: all 0.4s;
+}
+
+.fadeUpTrigger {
+  opacity: 0;
+}
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*---------------- news ------------------*/
